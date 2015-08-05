@@ -98,8 +98,11 @@
 				<configuration>
 					 
 					<tagNameFormat>${project.artifactId}-@{project.version}</tagNameFormat>
+<!--
 					<tagbase>${scm.tagbase}</tagbase>
+-->
 					<localCheckout>true</localCheckout>
+
 
 					<!-- 自动提交 -->
 					<pushChanges>true</pushChanges>
@@ -111,7 +114,7 @@
 						<checkModificationExclude>**/logs/**</checkModificationExclude>
 						<checkModificationExclude>**/target/**</checkModificationExclude>
 						<checkModificationExclude>**/.settings/**</checkModificationExclude>
-						<checkModificationExclude>**/*.bak</checkModificationExclude>
+                        <checkModificationExclude>**/*.bak</checkModificationExclude>
 						<checkModificationExclude>**/.project</checkModificationExclude>
 						<checkModificationExclude>**/.classpath</checkModificationExclude>
 					</checkModificationExcludes>
